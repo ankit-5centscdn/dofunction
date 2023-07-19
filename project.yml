@@ -1,0 +1,24 @@
+parameters: {}
+environment: {
+    apiEndPoint : 'http://206.189.183.219/cdn_network_performance',
+    apiKey: '0c1af39e5e60158acc76cef3ac1366e027cf6bef'
+  }
+packages:
+    - name: node
+      shared: false
+      environment: {}
+      parameters: {}
+      annotations: {}
+      functions:
+        - name: performance
+        - name: ping
+        - name: dnslookup
+          binary: false
+          main: ""
+          runtime: nodejs:default
+          web: true
+          webSecure: false
+          parameters: {}
+          environment: {}
+          annotations: {}
+          limits: {}
